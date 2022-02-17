@@ -9,6 +9,6 @@ namespace Werewolf.Data
     public class Rating
     {
         public int RatingId { get; set; }
-        public int Rating { get; set; }
+        public int StarRating { get; set; }
     }
 }

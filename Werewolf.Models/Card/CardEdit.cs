@@ -9,9 +9,14 @@ namespace Werewolf.Models.Card
 {
     public class CardEdit
     {
+        [Key]
+        public int CardId { get; set; }
+
         [MaxLength(20, ErrorMessage = "Card name can only contain 20 characters.")]
+
         public string RoleName { get; set; }
         [MinLength(10, ErrorMessage = "Your card's power must be stronger than 10 characters.")]
+        
         public string Power { get; set; }
     }
 }

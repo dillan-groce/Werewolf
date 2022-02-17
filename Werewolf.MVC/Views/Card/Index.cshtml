@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Werewolf.Models.Card.CardListItem>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<center>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @ViewBag.SaveResult
+    </div>
+}
+
+
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>@Html.HiddenFor(m => item.CardId)</h3>
+                        <p>
+                            @Html.DisplayFor(m => item.RoleName)
+                        </p>
+                        <p>@Html.ActionLink("View Card!", "", item.CardId)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    </center>

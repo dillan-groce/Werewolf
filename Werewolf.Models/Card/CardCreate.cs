@@ -9,6 +9,7 @@ namespace Werewolf.Models.Card
 {
     public class CardCreate
     {
+        [Key]
         [Required]
         [MaxLength(20, ErrorMessage ="Card name can only contain 20 characters.")]
         public string RoleName { get; set; }
