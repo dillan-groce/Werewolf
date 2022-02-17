@@ -59,6 +59,8 @@ namespace Werewolf.Data
             }
         }
 
+        //public System.Data.Entity.DbSet<Werewolf.Models.Card.CardDelete> CardDeletes { get; set; }
+
         //public System.Data.Entity.DbSet<Werewolf.Models.Card.CardCreate> CardCreates { get; set; }
     }
 }

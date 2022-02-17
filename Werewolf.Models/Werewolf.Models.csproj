@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card\CardDelete.cs" />
     <Compile Include="Card\CardDetail.cs" />
     <Compile Include="Card\CardEdit.cs" />
     <Compile Include="Card\CardCreate.cs" />
