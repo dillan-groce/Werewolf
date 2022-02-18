@@ -10,6 +10,7 @@ namespace Werewolf.Models.Card
     public class CardDelete
     {
         [Key]
+        [Required]
         public int CardId { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace Werewolf.Models.Card
     public class CardEdit
     {
         [Key]
+        [Required]
         public int CardId { get; set; }
 
         [MaxLength(20, ErrorMessage = "Card name can only contain 20 characters.")]
