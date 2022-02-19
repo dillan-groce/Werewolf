@@ -32,7 +32,7 @@
                             @Html.DisplayFor(m => item.RoleName)
                         </h3>
                         <p>
-                            @Html.ActionLink("View Card!", "", new { id = item.CardId })<br />
+                            @Html.ActionLink("View Card!", "Details", new { id = item.CardId })<br />
                             @Html.ActionLink("Edit", "Edit", new { id = item.CardId }) | | @Html.ActionLink("Delete", "Delete", new { id = item.CardId })
                         </p>
                     </div>

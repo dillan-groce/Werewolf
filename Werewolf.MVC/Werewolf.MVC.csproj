@@ -249,9 +249,11 @@
     <Content Include="Views\Card\Index.cshtml" />
     <Content Include="Views\Card\Edit.cshtml" />
     <Content Include="Views\Card\Delete.cshtml" />
+    <Content Include="Views\Card\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Deck\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
